@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import UploadFiles from './UploadFiles';
 
 const Player = () => {
   const [audio, setAudio] = useState(new Audio());
@@ -102,6 +104,9 @@ const Player = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className=' absolute top-4 left-4  px-5 py-1 bg-white text-black rounded-3xl'>
+        <Link to='/Upload' >Upload Music</Link>
       </div>
     </div>
   );
